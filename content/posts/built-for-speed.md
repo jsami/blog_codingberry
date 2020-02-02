@@ -35,7 +35,27 @@ Awake comes with Font Awesome 5 support out of the box, so you have a wealth of 
 
 ## Lazy Loading Like Crazy
 
-In order to speed up both compile time and page load time, basically everything but the header, footer, hero, and main content of the posts are lazy loaded. All grids are lazy loaded with infinite scroll and all images (feature images and those in posts) are also lazy loaded. Comments can be lazy loaded or loaded on click of "Show Comments" button.
+In order to speed up both compile time and page load time, basically everything but the header, footer, hero, and main content of the posts are lazy loaded. All grids are lazy loaded with infinite scroll and all images (feature images and those in posts) are also lazy loaded. Comments can be lazy loaded or loaded on click of "Show Comments" button.`
+
+```csharp
+void Main()
+{
+	int x= 0;
+	Action lambda = () => PrintValue(x);
+	
+	lambda();
+	
+	x = 5;
+	
+	lambda();
+}
+
+
+static void PrintValue(int i)
+{
+	Console.WriteLine("Value of i: {0}", i);
+}
+```
 
 ## Pretty Stinkin' Fast, I'd Say
 
